@@ -1,0 +1,27 @@
+#spring:
+ # application:
+   # name: SPRING-GATE-WAY
+
+  #cloud:
+   # gateway:
+    #discovery:
+     #    locator:
+      #      enabled: true
+ #   routes:
+  #    - id: FIRST-SERVICE
+   #     uri: http://localhost:8081/
+    #    predicates:
+     #   - Path=/employee/**
+#      - id: SECOND-SERVICE
+ #       uri: http://localhost:8082/
+  #      predicates:
+   #     - Path=/consumer/**
+        
+#eureka:
+ #  instance:
+  #    hostname: localhost
+#   client:
+ #     serviceURL:
+  #       defaultZone: http://localhost:8761/eureka
+#server:
+ #  port: 7070
